@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width height=device-height, initial-scale=1.0">
+    <title>Калитка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styles/carousel-1.css"> похоже, это та не рабочая карусель-->
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <!-- Ниже рабочая карусель -->
+    <link rel="stylesheet" href="styles/sliders.css">
+    <link rel="stylesheet" href="styles/sliders__2.css">
+</head>
+
+<body class="body-main">
+    <div id="desktop">
+        <header>
+            <div class="container">
+                <div class="row ">
+                    <div class="logo col-3 d-flex justify-content-start">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <nav class="offset-1 col-8">
+                        <ul class="header__ul">
+                            <a href="#about-me">
+                                <li>обо мне</li>
+                            </a>
+                            <a href="#portfolio">
+                                <li>портфолио</li>
+                            </a>
+                            <a href="#why-i">
+                                <li>почему я?</li>
+                            </a>
+                            <a href="#contacts">
+                                <li>контакты</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="wrapper row">
+                <main class="col-5">
+                    <div class="main__text">
+                        <div class="main__text__h1">
+                            <h1>КАЛИТКА</h1>
+                        </div>
+                        <div class="main__text__h2">
+                            <h2>ДИЗАЙНЕР-ИЛЛЮСТРАТОР</h2>
+                        </div>
+                    </div>
+                    <div class="contact_button d-flex justify-content-start align-items-center">
+                        <button class="main__button"> Связаться </button>
+                    </div>
+                </main>
+                <aside class="col-7">
+                    <div class="aside__img d-flex justify-content-end align-items-start">
+                        <img src="images/main.png" alt="my_photo" width="630px">
+                    </div>
+                </aside>
+                <div class="main__text__tp">
+                    <p style="margin-bottom: -1rem;">Соединяю фантазии с реальностью</p>
+                </div>
+            </div>
+        </div>
+        <div id="about-me" class="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="img-girl">
+                        <img src="images/girl.png" alt="girl" class="about-me__girl__img">
+                    </div>
+                    <div class="about-me__head offset-4 col-8 ">
+                        <div class="about-me__h1 offset-7">
+                            <h1>ОБО МНЕ</h1>
+                        </div>
+                        <div class="about-me__skills">
+                            <h2 class="skills__text">HardSkills</h2>
+                            <ul class="about_me__skills__bubbles">
+                                <li>иллюстрация</li>
+                                <li>полиграфия</li>
+                                <li>упаковка продукта</li>
+                                <li>графический дизайн</li>
+                                <li>векторная графика</li>
+                                <li>работа с ИИ</li>
+                                <li>создание макетов</li>
+                                <li>брендинг</li>
+                                <li>инфографика</li>
+                                <li>типографика</li>
+                            </ul>
+                        </div>
+                        <div class="about-me__skills">
+                            <h2 class="skills__text">SoftSkills</h2>
+                            <ul class="about_me__skills__bubbles">
+                                <li>работа в команде</li>
+                                <li>соблюдение сроков</li>
+                                <li>стрессоустойчивость</li>
+                                <li>постоянное развитие</li>
+                                <li>ответственность</li>
+                                <li>коммуникация</li>
+                                <li>нестандартное мышление</li>
+                                <li>внимание к деталям</li>
+                                <li>дисциплина</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me__text">
+                <div class="container">
+                    <div class="row">
+                        <div class="skills__ranges col-4">
+                            <div class="skills__range row d-flex align-items-start">
+                                <div class="icons col-3">
+                                    <img src="images/icons/ps.svg" alt="photoshop">
+                                </div>
+                                <div class="col-9">
+                                    <h4>Adobe Photoshop </h4>
+                                    <div class="progresss progresss-moved">
+                                        <div id="photoshop" class="progresss-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__range row">
+                                <div class="col-3">
+                                    <img src="images/icons/ai.svg" alt="illustrator">
+                                </div>
+                                <div class="col-9">
+                                    <h4>Adobe Illusrtator</h4>
+                                    <div class="progresss progresss-moved">
+                                        <div id="illustrator" class="progresss-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__range row">
+                                <div class="col-3">
+                                    <img src="images/icons/corelDRAW.svg" alt="CorelDRAW">
+                                </div>
+                                <div class="col-9">
+                                    <h4>CorelDRAW </h4>
+                                    <div class="progresss progresss-moved">
+                                        <div id="corel" class="progresss-bar"></div>
+                                    </div>
+                                </div>
+                                <!-- <input type="range" disabled min="0" max="10" step="1" value="10" class="progresss"> -->
+                            </div>
+                            <div class="skills__range row">
+                                <div class="col-3">
+                                    <img src="images/icons/figma.svg" alt="figma">
+                                </div>
+                                <div class="col-9">
+                                    <h4>Figma </h4>
+                                    <div class="progresss progresss-moved">
+                                        <div id="figma" class="progresss-bar"></div>
+                                    </div>
+                                </div>
+                                <!-- <input type="range" disabled min="0" max="10" step="1" value="5"  class="progresss"> -->
+                            </div>
+                        </div>
+                        <div class="about-me__description col-8">
+                            <p class="about-me__text__p">Я дизайнер и художник-иллюстратор</p>
+                            <p class="about-me__text__p">Специализируюсь на создании
+                                полиграфической продукции, оформлении
+                                бренда, построении визуала и
+                                художественной отрисовке любой идеи.</p>
+                            <p class="about-me__text__p">Этот сайт полностью спроектирован
+                                и создан мной, включая все элементы
+                                и анимации. </p>
+                            <p class="about-me__text__p"> Моя цель - не просто создавать красивые
+                                изображения, но и передавать через
+                                них эмоции, историю и концепции.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div id="portfolio" class="portfolio">
+                <div class="container">
+                    <div class="portfolio__text__h1  text-center">
+                        <h1>ПОРТФОЛИО</h1>
+                    </div>
+                    <div class="polygraphy__text__h2 text-center">
+                        <h2>Полиграфия</h2>
+                    </div>
+                    <div class="slider-container" id="slider-container__poligraph">
+                        <div class="slider-content">
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/ai.png" alt="1" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/vizitka_2.png" alt="8" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/edutech.png" alt="1" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/guap.png" alt="2" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/listovki.png" alt="3" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/menu.png" alt="4" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/menu_2.png" alt="5" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/pizza.png" alt="6" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/vizitka_1.png" alt="7" />
+                            </div>
+                            <div class="slider-single">
+                                <img class="slider-single-image" src="images/carousel/vizitka_3.png" alt="9" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="illustration__text__h2 text-center">
+                        <h2>Иллюстрация</h2>
+                    </div>
+                    <div class="slider-container__illustrator" id="slider-container__illustrator">
+                        <div class="slider-content__2">
+                            <div class="slider-single__2">
+                                <img class="slider-single-image__2" src="images/carousel_2/bird.png" alt="1" />
+                            </div>
+                            <div class="slider-single__2">
+                                <img class="slider-single-image__2" src="images/carousel_2/room_2.png" alt="2" />
+                            </div>
+                            <div class="slider-single__2">
+                                <img class="slider-single-image__2" src="images/carousel_2/pz2.png" alt="3" />
+                            </div>
+                            <div class="slider-single__2">
+                                <img class="slider-single-image__2" src="images/carousel_2/vaza_2.png" alt="4" />
+                            </div>
+                            <div class="slider-single__2">
+                                <img class="slider-single-image__2" src="images/carousel_2/room.png" alt="5" />
+                            </div>
+                            <div class="slider-single__2">
+                                <img class="slider-single-image__2" src="images/carousel_2/vaza.png" alt="6" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="why-i" class="why-i">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-7 col-5 why-i__text__h1 d-flex align-items-end">
+                            <h1>ПОЧЕМУ Я?</h1>
+                        </div>
+                    </div>
+                    <div class="carda">
+                        <div class="carda__outer">
+                            <h2>Соблюдение особых пожеланий</h2>
+                        </div>
+                        <div class="carda__inner row">
+                            <div class="carda__text col-10">
+                                <p>Понимаю, как добавить в работу
+                                    ”вкусный” красный, мягкий квадрат, как сделать
+                                    дизайн “живым” и наполнить его воздухом. </p>
+                                <p>Со мной можно общаться любыми метафорами,
+                                    все самые различные пожелания будут учтены. </p>
+                            </div>
+                            <div class="carda__img col-2"><img src="images/cards/card_1.png" alt="carda"
+                                    class="carda__pic">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carda">
+                        <div class="carda__outer">
+                            <h2>Индивидуальный проект</h2>
+                        </div>
+                        <div class="carda__inner row">
+                            <div class="carda__text col-10">
+                                <p>В своих работах я не повторяю шрифты, цвет,
+                                    элементы и композиции. Не делаю “как у них”
+                                    и “подобно этому”.</p>
+                                <p>Каждый проект уникален
+                                    и создан исключительно для одного заказчика</p>
+                            </div>
+                            <div class="carda__img col-2"><img src="images/cards/card_2.png" alt="carda"
+                                    class="carda__pic">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carda">
+                        <div class="carda__outer">
+                            <h2>Выполнение работы в срок</h2>
+                        </div>
+                        <div class="carda__inner row">
+                            <div class="carda__text col-10">
+                                <p>Мы заранее обговорим дату, в которую вы получите
+                                    готовый проект, независимо от сложности.</p>
+                                <p>Если проект нужен «еще вчера» - на меня
+                                    можно положиться</p>
+                            </div>
+                            <div class="carda__img col-2"><img src="images/cards/card_3.png" alt="carda"
+                                    class="carda__pic">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carda">
+                        <div class="carda__outer">
+                            <h2>Охват множества сфер</h2>
+                        </div>
+                        <div class="carda__inner row">
+                            <div class="carda__text col-10">
+                                <p>Полиграфия, иллюстрация, брендбук,
+                                    упаковка продукта, создание персонажей - все
+                                    это я уже умею и успешно создаю. </p>
+                                <p> При необходимости способна изучить
+                                    новое направление и приняться за работу.</p>
+                            </div>
+                            <div class="carda__img col-2"><img src="images/cards/card_4.png" alt="carda"
+                                    class="carda__pic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacts" class="contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-8 col-4 contacts__text">
+                            <h1>КОНТАКТЫ</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form col-5">
+                            <form action="form" method="POST">
+                                <div class="input-box">
+                                    <legend>Есть вопрос?</legend>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Имя">
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" placeholder="Почта">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Номер телефона">
+                                </div>
+                                <div class="input-box message-box">
+                                    <textarea placeholder="Ваше сообщение" id="textArea"></textarea>
+                                </div>
+
+                                <div class="custom-select" onclick="toggleOptions()">
+                                    <div class="visible-text">Удобный способ связи</div>
+                                    <div class="underline"></div>
+                                    <div class="options-container">
+                                        <div class="option" onclick="selectOption('Телефон')">
+                                            <p>Телефон</p>
+                                        </div>
+                                        <div class="option" onclick="selectOption('Email')">
+                                            <p>Email</p>
+                                        </div>
+                                        <div class="option" onclick="selectOption('Telegram')">
+                                            <p>Telegram</p>
+                                        </div>
+                                        <div class="option" onclick="selectOption('WhatsApp')">
+                                            <p>WhatsApp</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button">
+                                    <button>отправить</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="contact-icon offset-1 col-6">
+                            <div class="social-icons">
+                                <a href="https://t.me/alinaionku" target="telegram">
+                                    <img src="images/contact__icons/behance.svg" alt="1">
+                                </a>
+                                <a href="https://t.me/alinaionku" target="telegram">
+                                    <img src="images/contact__icons/mail.svg" alt="2">
+                                </a>
+                                <a href="https://t.me/alinaionku" target="telegram">
+                                    <img src="images/contact__icons/phone.svg" alt="3">
+                                </a>
+                                <a href="https://t.me/alinaionku" target="telegram">
+                                    <img src="images/contact__icons/pinterest.svg" alt="4">
+                                </a>
+                                <a href="https://t.me/alinaionku" target="telegram">
+                                    <img src="images/contact__icons/telegram.svg" alt="5">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="container">
+                    <div class="logo_footer">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="underline"></div>
+                <div class="container">
+                    <div class="row justify-content-between  align-items-center">
+                        <div class="footer-text col-3">
+                            <p>© Калитка 2023г.</p>
+                        </div>
+                        <div class="footer-icons col-3">
+                            <img src="images/footer-icons/mail.svg" alt="">
+                            <img src="images/footer-icons/telegram.svg" alt="">
+                            <img src="images/footer-icons/phone.svg" alt="">
+                        </div>
+                        <div class="footer-text col-3 text-right">
+                            <p class="aling-right">Пользовательское<br>соглашение</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------------------------------------------------------------------->
+    <!--МОБИЛЬНАЯ ВЕРСИЯ  -->
+    <div id="mobile">
+        <header>
+            <div id="header-inner" class="container">
+                <div><img src="#" alt="kalitka_logo"></div>
+                <nav>
+                    <ul class="header-ul">
+                        <li><a href="#"></a>обо мне</li>
+                        <li><a href="#"></a>портфолио</li>
+                        <li><a href="#"></a>почему я?</li>
+                        <li><a href="#"></a>контакты</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <div>
+                    <div>
+                        <h2 class="">КАЛИТКА</h2>
+                        <h3 class="">ДИЗАЙНЕР-ИЛЛЮСТРАТОР</h3>
+                    </div>
+                </div>
+                <div><img src="images/main.png" alt="designer's photo"></div>
+                <footer>
+                    <p>Соединяю фантазии с реальностью</p>
+                </footer>
+                <div id="main__button__mobile"><button class="main__button">Связаться</button></div>
+            </section>
+            <section id="about_me-section">
+                <div class="container">
+                    <div class="title">
+                        <h2>ОБО МНЕ</h2>
+                    </div>
+                    <section id="about_me-skills">
+                        <div class="skills">
+                            <div class="skills__title">
+                                <h3>HardSkills</h3>
+                            </div>
+                            <div class="skills__bubbles">
+                                <div class="skills__bubble">
+                                    <p>иллюстрация</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>полиграфия</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>упаковка продукта</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>графический дизайн</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>векторная графика</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>работа с ИИ</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>создание макетов</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>брендинг</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>инфографика</p>
+                                </div>
+                                <div class="skills__bubble">
+                                    <p>типографика</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skills__title">
+                                <h3>SoftSkills</h3>
+                            </div>
+                            <div class="skills__bubbles">
+                                <div class="skills__buble">
+                                    <p>работа в команде</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>соблюдение сроков</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>стрессоустойчивость</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>постоянное развитие</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>ответственность</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>коммуникация</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>нестандартное мышление</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>внимание к деталям</p>
+                                </div>
+                                <div class="skills__buble">
+                                    <p>дисциплина</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section>
+                    <div id="about_me-container" class="container">
+                        <section id="about_me-description">
+                            <p>Я дизайнер и художник-иллюстратор</p>
+                            <p>Специализируюсь на создании полиграфической продукции, оформлении бренда, построении
+                                визуала и
+                                художественной отрисовке любой идеи.</p>
+                            <p>Этот сайт полностью спроектирован и создан мной, включая все элементы и анимации.</p>
+                            <p>Моя цель - не просто создавать красивые изображения, но и передавать через них
+                                эмоции, историю и
+                                концепции.</p>
+                        </section>
+                        <section id="about_me-level">
+                            <div class="level">
+                                <div class="level__logo"><img src="images/" alt="photoshop"></div>
+                                <section>
+                                    <div class="level__name"><label for="">Adobe Photoshop</label></div>
+                                    <div class="level__progress"></div>
+                                </section>
+                            </div>
+                            <div class="level">
+                                <div class="level__logo"><img src="images/" alt="illustrator"></div>
+                                <section>
+                                    <div class="level__name"><label for="">Adobe Illustrator</label></div>
+                                    <div class="level__progress"></div>
+                                </section>
+                            </div>
+                            <div class="level">
+                                <div class="level__logo"><img src="images/" alt="CorelDraw"></div>
+                                <section>
+                                    <div class="level__name"><label for="">CorelDraw</label></div>
+                                    <div class="level__progress"></div>
+                                </section>
+                            </div>
+                            <div class="level">
+                                <div class="level__logo"><img src="images/" alt="Figma"></div>
+                                <section>
+                                    <div class="level__name"><label for="">Figma</label></div>
+                                    <div class="level__progress"></div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+            </section>
+            <section id="portfolio">
+                <div class="container">
+                    <section class="title">
+                        <h2>ПОРТФОЛИО</h2>
+
+                    </section>
+                    <section class="carousel title">
+                        <h3>Полиграфия</h3>
+                        <div class="slider-container" id="slider-container__poligraph">
+                            <div class="slider-content">
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/ai.png" alt="ai" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/vizitka_2.png"
+                                        alt="8" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/edutech.png" alt="1" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/guap.png" alt="2" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/listovki.png"
+                                        alt="3" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/menu.png" alt="4" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/menu_2.png" alt="5" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/pizza.png" alt="6" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/vizitka_1.png"
+                                        alt="7" />
+                                </div>
+                                <div class="slider-single-mobile">
+                                    <img class="slider-single-mobile-image" src="images/carousel/vizitka_3.png"
+                                        alt="9" />
+                                </div>
+                            </div>
+                    </section>
+                    <section class="carousel title">
+                        <h3>Иллюстрация</h3>
+                        <div class="slider-container__illustrator" id="slider-container__illustrator">
+                            <div class="slider-content__2">
+                                <div class="slider-single-mobile__2">
+                                    <img class="slider-single-mobile-image__2" src="images/carousel_2/room_2.png"
+                                        alt="1" />
+                                </div>
+                                <div class="slider-single-mobile__2">
+                                    <img class="slider-single-mobile-image__2" src="images/carousel_2/pz2.png"
+                                        alt="2" />
+                                </div>
+                                <div class="slider-single-mobile__2">
+                                    <img class="slider-single-mobile-image__2" src="images/carousel_2/vaza_2.png"
+                                        alt="3" />
+                                </div>
+                                <div class="slider-single-mobile__2">
+                                    <img class="slider-single-mobile-image__2" src="images/carousel_2/room.png"
+                                        alt="4" />
+                                </div>
+                                <div class="slider-single-mobile__2">
+                                    <img class="slider-single-mobile-image__2" src="images/carousel_2/vaza.png"
+                                        alt="5" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section id="why_me-section" class="container">
+                <section class="title">
+                    <h2>ПОЧЕМУ Я?</h2>
+                </section>
+                <section>
+                    <div class="card">
+                        <div class="card__title">Соблюдение особых пожеланий</div>
+                        <div class="card__container">
+                            <div class="card__img">
+                                <img src="images" alt="#">
+                                <div class="card__text">
+                                    <p>Мы заранее обговорим дату, в которую вы получите готовый проект, независимо
+                                        от сложности.</p>
+                                    <p>Если проект нужен «еще вчера» - на меня можно положиться</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">Индивидуальный проект</div>
+                        <div class="card__container">
+                            <div class="card__img">
+                                <img src="images/" alt="">
+                                <div class="card__text">
+                                    <p>В своих работах я не повторяю шрифты, цвет, элементы и композиции. Не делаю
+                                        “как у них” и “подобно
+                                        этому”.</p>
+                                    <p>Каждый проект уникален и создан исключительно для одного заказчика</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">Выполнение работы в срок</div>
+                        <div class="card__container">
+                            <div class="card__img">
+                                <img src="images/" alt="#">
+                                <div class="card__text">
+                                    <p>Мы заранее обговорим дату, в которую вы получите готовый проект, независимо
+                                        от сложности.</p>
+                                    <p>Если проект нужен «еще вчера» - на меня можно положиться</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__title">Охват множества сфер</div>
+                        <div class="card__container">
+                            <div class="card__img">
+                                <img src="images/" alt="">
+                                <div class="card__text">
+                                    <p>Полиграфия, иллюстрация, брендбук, упаковка продукта, создание персонажей -
+                                        все это я уже умею и
+                                        успешно создаю.</p>
+                                    <p>При необходимости способна изучить новое направление и приняться за работу.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+</body>
+<script src="js/carousel.js"></script>
+<script src="js/index.js"></script>
+<script src="js/carousel__2.js"></script>
+
+</html>

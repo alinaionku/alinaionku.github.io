@@ -1,0 +1,429 @@
+@import url("mobile/mobile.css") screen and (max-width: 900px);
+
+@font-face {
+font-family: alethiapro-regular;
+src:url("../fonts/alethiapro/alethiapro-regular.ttf") format("ttf"),
+	url("../fonts/alethiapro/alethiapro-regular.woff") format("woff"),
+	url("../fonts/alethiapro/alethiapro-regular.woff2") format("woff2"),
+	url("../fonts/alethiapro/alethiapro-regular.eot") format("eot");
+}
+@font-face {
+font-family: circe-extrabold;
+src:url("../fonts/circe-extrabold/circe-extrabold.ttf") format("ttf"),
+	url("../fonts/circe-extrabold/circe-extrabold.woff") format("woff"),
+	url("../fonts/circe-extrabold/circe-extrabold.woff2") format("woff2"),
+	url("../fonts/circe-extrabold/circe-extrabold.eot") format("eot");
+}
+@font-face {
+font-family: JakobCTT;
+src:url("../fonts/JakobCTT/JakobCTT.ttf") format("ttf"),
+	url("../fonts/JakobCTT/JakobCTT.woff") format("woff"),
+	url("../fonts/JakobCTT/JakobCTT.woff2") format("woff2"),
+	url("../fonts/JakobCTT/JakobCTT.eot") format("eot");
+}
+@font-face{
+font-family: irinactt;
+src: url("../fonts/irinactt/irinactt.ttf") format("ttf"),
+	url("../fonts/irinactt/irinactt.woff") format("woff"),
+	url("../fonts/irinactt/irinactt.woff2") format("woff2"),
+	url("../fonts/irinactt/irinactt.eot") format("eot");
+}
+
+/* *{
+	border: 1px solid red;
+} */
+
+/* Заебали крутящиеся хуйни внизу
+.container {
+	overflow: hidden;
+} */
+
+.body-main{
+	background-color: rgba(0, 5, 31, 0);
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-blend-mode: darken;
+	transition: all 0.3s ease;
+}
+
+.body-dark{
+	background-color: rgba(0, 5, 38, 0.752);
+	transition: all 0.3s ease;
+	background-blend-mode: multiply;
+}
+
+.header__ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+
+	font-family: circe-extrabold;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	color: white;
+}
+
+.header__ul a {
+    color: white;           /* Цвет текста для всех ссылок внутри .header__ul */
+    text-decoration: none;  /* Убираем подчеркивание для всех ссылок внутри .header__ul */
+}
+
+.main__text__h1>h1{	
+	color: white;
+	font-family: JakobCTT;
+	letter-spacing: 0.5rem;
+	font-size: 5rem;
+}
+
+.main__text__h2>h2{
+	color: white;
+	font-family: irinactt;
+	letter-spacing:0.1rem;
+	font-size: 2.9rem;
+}
+
+.main__button{
+	height: 4.5rem;
+	width: 13rem;
+
+	border-radius: 150rem;
+	border: 0rem;
+
+	background: linear-gradient(-41deg,#FFCC00, #FFCC00, #FF9933, #FF9933);	
+	
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 2.1rem;
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+
+.contact_button{
+	height: 15rem;
+}
+
+.main__text__tp{
+	color: white;
+	font-size: 3.5rem;
+	font-family: alethiapro-regular;
+}
+.aside__img{
+	height: 1rem;
+}
+
+ .about-me__h1>h1{
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 4rem;
+ }
+.skills__text{
+	color: white;
+	font-family:  circe-extrabold;
+	font-size: 3rem;
+}
+
+
+.about-me__skills li{
+	color: white;
+	font-family: alethiapro-regular ;
+	font-size: 20px;
+	list-style-type: none;
+	border: 3px solid white;
+}
+
+.about-me__skills li:hover{
+	cursor: none;
+	color: #000;
+	background-color: #fff;
+}
+
+ .about-me__text{
+	border: 0rem;
+	background: linear-gradient(180deg,#03002B, #03002B, #11162b81, #ff993300);	
+	
+	font-family: alethiapro-regular;
+	color: white;
+	font-size: 1.8rem;
+ }
+
+
+.progresss{
+	padding: 6px;
+	border-radius: 5.65625rem;
+	border: 3px solid #004bac;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.progresss-bar{
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+.progresss-moved .progresss-bar{
+  width: 85%;
+  background:linear-gradient(90deg,#00066A,#004bac, #00C6FA) ;
+}
+
+#illustrator{
+	width: 90%;
+}
+
+#photoshop{
+	width: 90%;
+}
+
+#corel{
+	width: 100%;
+}
+
+#figma{
+	width: 50%;
+}
+
+
+ .portfolio__text__h1>h1{
+	font-size: 4rem;
+	color: white;
+	font-family: circe-extrabold;
+	
+ }
+
+ .polygraphy__text__h2>h2{
+	font-size: 3rem;
+	color: white;
+	font-family: alethiapro-regular;
+ }
+
+ .illustration__text__h2>h2{
+	font-size: 3rem;
+	color: white;
+	font-family: alethiapro-regular;
+ }
+
+ .why-i__text__h1>h1{
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 4rem;
+ }
+
+ .carda__text{
+	font-size: 1.9rem;
+	color: white;
+	font-family: alethiapro-regular;
+ }
+
+ .why-i__text__h2{
+	margin-top: 6rem;
+ }
+ .carda__inner{
+	background: rgba(0, 1, 60, 0.05);
+	box-shadow: 0 4px 30px rgb(4, 0, 19);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	border: 1px solid rgba(255, 255, 255, 0);
+ }
+
+
+ .carda__outer>h2{
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+ }
+
+ .contacts__text>h1{
+	font-family:  circe-extrabold;
+	color: white;
+	font-size: 4rem;
+ }
+
+
+.form{
+	/* height: 18px; */
+	border-radius: 20px;
+	background-color:#ffffff3f;
+	/* width:40%; */
+	margin-top: 5rem;
+	padding:15px;
+	line-height: 3rem;
+	box-shadow: 0 0 10px rgba(0, 0, 39, 0.631);
+}
+
+legend{
+	display: flex;
+	justify-content: center;
+	color: white;
+	background: none;
+	font-family: circe-extrabold;
+	font-size: 3rem;
+	width: 100%;
+
+}
+
+.input-box {
+	min-height: 2rem;
+	margin-top: 2rem;
+}
+.input-box:nth-child(1){
+	margin-top:1 ;
+}
+
+.input-box input,
+.input-box textarea,
+.input-box label,
+.input-box .selector{
+	font-size: 2rem;
+	font-family: alethiapro-regular;
+	color: #fff;
+
+	height: 50%;
+	width: 100%;
+	background: none;
+	border: none;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 0.5rem;
+
+	/* resize:none; */
+	 /* Запретить изменение размера */
+
+	overflow-y: auto; /* Показывать полосы прокрутки только при необходимости */
+    scrollbar-width: thin;
+	 /* Толщина полосы прокрутки (может не работать во всех браузерах) */
+    scrollbar-color: white;
+	
+}
+
+.input-box textarea{
+	min-height: 4rem;
+	max-height: 15rem;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    outline: none; /* Убрать контур фокуса */
+    border-color: #fff; /* Цвет рамки при фокусе */
+	/* min-height: 1rem; */
+}
+
+/* input[type="button"] */
+.button button{
+	margin-top: 3rem;
+	border:  5px solid rgb(255, 255, 255);;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0);
+	font-family: circe-extrabold;
+	font-size: 2.5rem;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	cursor: pointer;
+	
+}
+
+/* input */
+.button button:hover{
+	background-color: rgba(255, 255, 255, 0.295);
+	/* border-color:  #ffffff7a;
+	background-color: #ffffff7a;
+	color: #03002B; */
+}
+
+.input-box>label{
+	border: none;
+}
+
+.custom-select {
+	position: relative;
+	width: 100%;
+	
+  }
+
+.custom-select::before {
+	content: "v";
+	position: absolute;
+	width: 100%;
+	color: white;
+	transform: translate(93%);
+	font-family: alethiapro-regular;
+	font-size: 2rem;
+	opacity: 0.5;
+}
+
+.visible-text {
+	font-family:  alethiapro-regular;
+	font-size: 2rem;
+	color: white;
+	border: none;
+	cursor: pointer;
+	opacity: 0.5;
+	margin-top: 1.5rem;
+}
+
+.underline {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background-color: white; /* Ярко-белое подчеркивание */
+	margin-top: 0.9rem;
+	width: 100%;
+}
+
+.contact-icon{
+	background: url('../images/contact__icons/main-icons.png') no-repeat center;
+	background-size: 80%;
+}  
+
+.options-container {
+	/* position: absolute; */
+	width: 100%;
+	font-family: alethiapro-regular;
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	display: none;
+	border: none;
+	border-top: none;
+	background-color: rgba(255, 255, 255, 0.171); /* Прозрачный белый цвет */
+}
+
+  .option {
+	padding: 10px;
+	cursor: pointer;
+  }
+
+.option:hover {
+	background-color: #e0e0e05b; /* Цвет при наведении курсора */
+  }
+
+.footer{
+	background-color: #010940;
+	padding: 2rem 0;
+}
+
+.footer-text{
+	font-family: alethiapro-regular;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.aling-right{
+	text-align: right;
+}

@@ -1,0 +1,27 @@
+
+.header__ul a:hover {
+    color: #0b004b; /* Замените "#your-hover-color" на цвет, который вы хотите при наведении */
+}
+
+
+.main__button{
+    transition: all 0.3s ease;
+}
+
+.main__button:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: all 0.3s ease;
+}
+
+.aside__img{
+	transition: all 0.3s ease;
+ }
+
+.aside__img:hover{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	transition: all 0.3s ease;
+ }

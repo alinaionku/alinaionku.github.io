@@ -1,0 +1,8 @@
+@import url('mobile_layout.css');
+
+#desktop{
+    display: none;
+}
+#mobile{
+    display: block;
+}
