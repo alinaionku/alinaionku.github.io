@@ -1,3 +1,4 @@
+@import url("desktop/desktop.css") screen and (min-width: 900px);
 @import url("mobile/mobile.css") screen and (max-width: 900px);
 
 @font-face {
@@ -47,6 +48,7 @@ src: url("../fonts/irinactt/irinactt.ttf") format("ttf"),
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	
 	background-size: cover;
 	background-blend-mode: darken;
 	transition: all 0.3s ease;
@@ -74,34 +76,24 @@ src: url("../fonts/irinactt/irinactt.ttf") format("ttf"),
     text-decoration: none;  /* Убираем подчеркивание для всех ссылок внутри .header__ul */
 }
 
+
 .main__text__h1>h1{	
 	color: white;
 	font-family: JakobCTT;
-	letter-spacing: 0.5rem;
-	font-size: 5rem;
+	
 }
 
 .main__text__h2>h2{
 	color: white;
 	font-family: irinactt;
-	letter-spacing:0.1rem;
-	font-size: 2.9rem;
 }
 
 .main__button{
-	height: 4.5rem;
-	width: 13rem;
-
 	border-radius: 150rem;
 	border: 0rem;
-
 	background: linear-gradient(-41deg,#FFCC00, #FFCC00, #FF9933, #FF9933);	
-	
 	font-family: circe-extrabold;
 	color: white;
-	font-size: 2.1rem;
-	letter-spacing: 0.1rem;
-	text-align: center;
 }
 
 .contact_button{
@@ -110,29 +102,26 @@ src: url("../fonts/irinactt/irinactt.ttf") format("ttf"),
 
 .main__text__tp{
 	color: white;
-	font-size: 3.5rem;
 	font-family: alethiapro-regular;
 }
-.aside__img{
+
+/* .aside__img{
 	height: 1rem;
-}
+} */
 
  .about-me__h1>h1{
 	font-family: circe-extrabold;
 	color: white;
-	font-size: 4rem;
  }
 .skills__text{
 	color: white;
 	font-family:  circe-extrabold;
-	font-size: 3rem;
 }
 
 
 .about-me__skills li{
 	color: white;
 	font-family: alethiapro-regular ;
-	font-size: 20px;
 	list-style-type: none;
 	border: 3px solid white;
 }
@@ -149,7 +138,6 @@ src: url("../fonts/irinactt/irinactt.ttf") format("ttf"),
 	
 	font-family: alethiapro-regular;
 	color: white;
-	font-size: 1.8rem;
  }
 
 

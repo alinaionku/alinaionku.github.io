@@ -1,0 +1,271 @@
+#mobile{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    position: sticky;
+    top: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 5;
+}
+
+
+dl, ol, ul{
+    margin-bottom: 0rem;
+}
+
+.main__text__h1>h1{
+	margin-top: 7rem;
+    letter-spacing: 0.5rem;
+    font-size: 5rem;
+}
+
+.main__text__h2>h2{
+    margin-top: 0rem;
+    letter-spacing:0.1rem;
+	font-size: 2.9rem;
+}
+
+.aside__img{
+    margin-top: 3rem;
+}
+.main__text__tp{
+    font-size: 3.5rem;
+    margin-top: 10rem;
+}
+
+.main__button{
+    height: 4.5rem;
+	width: 13rem;
+    font-size: 2.1rem;
+	letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.about-me{
+    margin-top: 15rem;
+}
+.skills__text{
+    margin-left: 5rem;
+}
+
+.about-me__text{
+    font-size: 1.8rem;
+}
+
+.about-me__h1>h1{
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.about-me__skills ul{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-center;
+    gap: 10px 8px;
+}
+.about-me__skills li{	
+	border-radius: 40px;
+	padding: 4px 15px;
+}
+.about_me__skills__bubbles{
+    margin-bottom: 2rem;
+}
+
+.about-me__text{
+    padding: 1rem 2rem;
+    padding-top: 7rem;
+}
+.about-me__text__p{
+    padding: 1rem;
+    margin-bottom: -1rem;
+}
+
+.about-me__text .container{
+    position: relative;
+}
+
+.about-me__head{
+    width: 60%;
+    margin-left: 0;
+}
+
+.img-girl{
+    width: 30%;
+}
+
+.about-me__girl__img{
+    height: 35rem;
+    width: 35rem;
+    position: relative;
+    right: 4rem;;
+    top: 32%;
+    z-index: 1;
+}
+
+.skills__text{
+	font-size: 3rem;
+}
+
+.about-me__skills li{
+	font-size: 20px;
+}
+
+.skills__range{
+    margin-top: 2rem;
+}
+
+.portfolio{
+    margin-top: 20rem;
+    width: 100%;
+    height: 100%
+
+}
+
+.why-i{
+    margin-top: 20rem;
+}
+
+
+.illustration__text__h2>h2{
+    margin-top: 10rem;
+}
+
+
+.carda__text>p{
+    margin-bottom: 0;
+}
+
+.carda{
+    margin-top: 5rem;
+    padding: 0.8rem;
+}
+/* .carda__img{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2rem;
+
+} */
+
+.carda__inner{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.carda__inner>.carda__img{
+    text-align: right;
+}
+
+.carda:nth-child(odd)>.carda__inner{
+    flex-direction: row-reverse;
+}
+.carda:nth-child(odd)>.carda__inner>.carda__text{
+    text-align: right;
+}
+.carda:nth-child(odd)>.carda__inner>.carda__img{
+    text-align: left;
+}
+.carda:nth-child(odd)>.carda__outer{
+    text-align: right;
+}
+
+.contacts{
+    margin-top: 10rem;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+margin-top: 7rem;
+}
+
+.contact-icon{
+width: 43rem;
+left: 40%;
+margin-top: 6rem;
+position: absolute;
+}
+
+.main-icon{
+	position: relative;
+	left: 10%;
+    top: -35rem;
+	width: 38rem;
+  }
+
+.social-icons{
+    position: relative;
+    left: 10%;
+    width: 31rem;
+    height: 31rem;
+    /* margin: auto auto;
+    width: 608px;
+    height: 100px; */
+    position: relative;
+    top: 2rem;
+    animation: rotation 60s linear infinite;
+    z-index: 2;
+}  
+
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.social-icons img,
+.social-icons a{
+    position: relative;
+}
+
+.social-icons a:nth-child(1){
+    top: 25%;
+    left: -15%;
+}
+.social-icons a:nth-child(2){
+    top: -15%;
+    left: 20%;
+}
+.social-icons a:nth-child(3){
+    top: 25%;
+    left: 60%;
+}
+.social-icons a:nth-child(4){
+    top: 90%;
+    left: -55%;
+}
+.social-icons a:nth-child(5){
+    top: 90%;
+    left: 0%;
+}
+
+.footer{
+    margin-top: 7rem;
+    padding: 2rem;
+}
+
+.logo_footer{
+	display: flex;
+	justify-content: center;
+    height: 4rem;
+}
+
+.footer-text{
+margin-top: 1rem;
+}
+
+.footer-icons img {
+    margin-right: 1rem ;
+}

@@ -6,3 +6,9 @@
 #mobile{
     display: block;
 }
+
+.about-me__progress{
+    border: 0rem;	
+	font-family: alethiapro-regular;
+	color: white;
+}

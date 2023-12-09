@@ -1,0 +1,131 @@
+/* *{
+    border: 1px solid red;
+} */
+
+main > section{
+    /* margin-bottom: 10rem; */
+    margin-bottom: 1rem;
+}
+
+.header__ul a{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+
+	font-size: 0.5rem;
+	letter-spacing: 0.1rem;
+}
+
+.main__text__h1>h1{
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+	font-size: 2.8rem;
+}
+
+.main__text__h2>h2{
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.aside__img{
+    margin: 0 auto;
+    text-align: center;
+}
+.aside__img img{
+    width: 300px;
+}
+
+.main__text__tp{
+	text-align: center;
+    font-size: 1.9rem;
+}
+.main-button{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__button{
+    height: 3.5rem;
+	width: 11rem;
+
+    margin: 0 auto;
+    margin-top: 0rem;
+    
+    font-size: 1.7rem;
+	letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+/* #main__button__mobile{
+    
+} */
+
+/* .img-girl{
+    width: 30%;
+} */
+
+.about-me__girl__img{
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    right: 3rem;;
+    top: 20%;
+    z-index: 1;
+}
+
+.about-me__h1{
+    margin: auto;
+}
+
+.about-me__h1>h1{
+    font-size: 2rem;
+}
+
+.about-me__text{
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.skills__text{
+	font-size: 2rem;
+}
+.about_me__skills__bubbles{
+    padding-left: 0 !important;
+    
+}
+
+.about-me__skills{
+    margin-top: 3rem;
+}
+
+.about-me__skills li{
+	font-size: 1rem;
+    border-radius: 40px;
+	padding: 4px 15px;
+}
+
+.about_me__skills__bubbles{
+    margin-bottom: 4rem;
+}
+
+.about-me__skills ul{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-center;
+    gap: 10px 8px;
+}
+
+.about-me__progress__text{
+font-size: 1.3rem;
+}
+
+.about-me__progress{
+    padding-left: 1rem;
+}
+
+.skills__range{
+margin-top: 1rem;
+}
