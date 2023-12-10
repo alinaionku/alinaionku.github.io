@@ -3,6 +3,7 @@ const noArrows = false;
 const noBullets = false;
 
 const container = document.querySelector('#slider-container__poligraph');
+const container_mobile = document.querySelector('#slider-container-mobile__poligraph');
 var slide = document.querySelectorAll('.slider-single');
 var slideTotal = slide.length - 1;
 var slideCurrent = -1;
@@ -24,6 +25,7 @@ function initBullets() {
         elem.classList.add('proactivede');
     })
     container.appendChild(bulletContainer);
+    container_mobile.appendChild(bulletContainer);
 }
 
 function initArrows() {
@@ -52,6 +54,8 @@ function initArrows() {
     })
     container.appendChild(leftArrow);
     container.appendChild(rightArrow);
+    container_mobile.appendChild(leftArrow);
+    container_mobile.appendChild(rightArrow);
 }
 
 function slideInitial() {

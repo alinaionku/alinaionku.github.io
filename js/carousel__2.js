@@ -3,6 +3,7 @@ const noArrows2 = false;
 const noBullets2 = false;
 
 const container2 = document.querySelector('#slider-container__illustrator');
+const container2_mobile = document.querySelector('#slider-container-mobile__illustrator');
 var slide2 = document.querySelectorAll('.slider-single__2');
 var slideTotal2 = slide2.length - 1;
 var slideCurrent2 = -1;
@@ -25,6 +26,7 @@ function initBullets2() {
         elem.classList.add('proactivede');
     })
     container2.appendChild(bulletContainer2);
+    container2_mobile.appendChild(bulletContainer2);
 }
 
 function initArrows2() {
@@ -53,6 +55,8 @@ function initArrows2() {
     })
     container2.appendChild(leftArrow2);
     container2.appendChild(rightArrow2);
+    container2_mobile.appendChild(leftArrow2);
+    container2_mobile.appendChild(rightArrow2);
 }
 
 function slideInitial2() {
