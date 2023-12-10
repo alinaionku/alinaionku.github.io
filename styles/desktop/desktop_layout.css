@@ -36,7 +36,7 @@ dl, ol, ul{
 }
 .main__text__tp{
     font-size: 3.5rem;
-    margin-top: 10rem;
+    margin-top: 4rem;
 }
 
 .main__button{
@@ -120,12 +120,29 @@ dl, ol, ul{
     margin-top: 2rem;
 }
 
+.progresss-bar{
+    height: 18px;
+}
+
+.progresss{
+	padding: 6px;
+}
+
 .portfolio{
     margin-top: 20rem;
     width: 100%;
     height: 100%
 
 }
+
+.portfolio__text__h1>h1{
+	font-size: 4rem;
+ }
+
+ .polygraphy__text__h2>h2{
+	font-size: 3rem;
+ }
+
 
 .why-i{
     margin-top: 20rem;

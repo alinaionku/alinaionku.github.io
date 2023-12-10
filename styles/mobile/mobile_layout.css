@@ -95,6 +95,7 @@ main > section{
 .about_me__skills__bubbles{
     padding-left: 0 !important;
     
+    
 }
 
 .about-me__skills{
@@ -104,11 +105,11 @@ main > section{
 .about-me__skills li{
 	font-size: 1rem;
     border-radius: 40px;
-	padding: 4px 15px;
+	padding: 1px 8px;
 }
 
 .about_me__skills__bubbles{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .about-me__skills ul{
@@ -129,3 +130,27 @@ font-size: 1.3rem;
 .skills__range{
 margin-top: 1rem;
 }
+
+.progresss-bar{
+    height: 13px;
+}
+
+.progresss{
+	padding: 4px;
+}
+
+.portfolio{
+    margin-top: 20rem;
+    width: 100%;
+    height: 100%
+
+}
+
+.portfolio__text__h1>h1{
+	font-size: 2.5rem;
+ }
+
+ .polygraphy__text__h2>h2{
+	font-size: 2rem;
+
+ }
