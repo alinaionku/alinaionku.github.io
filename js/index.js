@@ -11,7 +11,15 @@ let scroll_prev = this.scrollY;
 let beginProzrachnost = 100;
 
 // мы можем перезагрузить страницу, где this.scrollY = 500, и получить шапку без подложки
-
+if(this.scrollY > beginProzrachnost){
+    prozrachnost = (this.scrollY-beginProzrachnost)/100;
+    header.style.background = 
+    "linear-gradient(-90deg,hsla(223, 87.8%, 32.2%,"+prozrachnost+
+    "), hsla(223, 87.8%, 32.2%,"+prozrachnost+
+    "), hsla(223, 84.7%, 23.1%,"+prozrachnost+
+    "), hsla(223, 84.7%, 23.1%,"+prozrachnost;
+    // console.log(header.style.background)
+}
 // Этот листенер отвечает за шапку сайта и его пропажу\появление
 window.addEventListener("scroll", function(){
     if(this.scrollY > beginProzrachnost && this.scrollY > scroll_prev){
