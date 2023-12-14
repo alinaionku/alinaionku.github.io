@@ -2,33 +2,45 @@ const repeat = false;
 const noArrows = false;
 const noBullets = false;
 
-const container = document.querySelector('#slider-container__poligraph');
-const container_mobile = document.querySelector('#slider-container-mobile__poligraph');
-var slide = document.querySelectorAll('.slider-single');
-var slideTotal = slide.length - 1;
-var slideCurrent = -1;
+class carousel{
+    constructor(id){
+        this.id = id;
+        this.container = document.querySelector(id)
+        this.slide = this.container.querySelectorAll('.slider-single')
+        this.total = this.slide.length -1
+        this.current = -1
+    }
 
-function initBullets() {
+}
+
+const desktopPoligraph = new carousel('#slider-container__poligraph')
+const desktopIllustrator = new carousel('#slider-container__illustrator')
+const mobilePoligraph = new carousel('#slider-container-mobile__poligraph');
+const mobileIllustrator = new carousel('#slider-container-mobile__illustrator');
+
+
+function initBullets(carousel) {
     if (noBullets) {
         return;
     }
     const bulletContainer = document.createElement('div');
     bulletContainer.classList.add('bullet-container')
-    slide.forEach((elem, i) => {
+    console.log(carousel.container)
+    console.log(carousel.slide)
+    carousel.slide.forEach((elem, i) => {
         const bullet = document.createElement('div');
         bullet.classList.add('bullet')
         bullet.id = `bullet-index-${i}`
         bullet.addEventListener('click', () => {
-            goToIndexSlide(i);
+            goToIndexSlide(i, carousel);
         })
         bulletContainer.appendChild(bullet);
         elem.classList.add('proactivede');
     })
-    container.appendChild(bulletContainer);
-    container_mobile.appendChild(bulletContainer);
+    carousel.container.appendChild(bulletContainer);
 }
 
-function initArrows() {
+function initArrows(carousel) {
     if (noArrows) {
         return;
     }
@@ -40,7 +52,7 @@ function initArrows() {
     leftArrow.textContent = "<"
     leftArrow.appendChild(iLeft)
     leftArrow.addEventListener('click', () => {
-        slideLeft();
+        slideLeft(carousel);
     })
     const rightArrow = document.createElement('a')
     const iRight = document.createElement('i');
@@ -50,54 +62,52 @@ function initArrows() {
     rightArrow.textContent = ">"
     rightArrow.appendChild(iRight)
     rightArrow.addEventListener('click', () => {
-        slideRight();
+        slideRight(carousel);
     })
-    container.appendChild(leftArrow);
-    container.appendChild(rightArrow);
-    container_mobile.appendChild(leftArrow);
-    container_mobile.appendChild(rightArrow);
+    carousel.container.appendChild(leftArrow);
+    carousel.container.appendChild(rightArrow);
 }
 
-function slideInitial() {
-    initBullets();
-    initArrows();
+function slideInitial(carousel) {
+    initBullets(carousel);
+    initArrows(carousel);
     setTimeout(function () {
-        slideRight();
+        slideRight(carousel);
     }, 500);
 }
 
-function updateBullet() {
+function updateBullet(carousel) {
     if (!noBullets) {
-        document.querySelector('.bullet-container').querySelectorAll('.bullet').forEach((elem, i) => {
+        carousel.container.querySelector('.bullet-container').querySelectorAll('.bullet').forEach((elem, i) => {
             elem.classList.remove('active');
-            if (i === slideCurrent) {
+            if (i === carousel.current) {
                 elem.classList.add('active');
             }
         })
     }
-    checkRepeat();
+    checkRepeat(carousel);
 }
 
-function checkRepeat() {
+function checkRepeat(carousel) {
     if (!repeat) {
-        if (slideCurrent === slide.length - 1) {
-            slide[0].classList.add('not-visible');
-            slide[slide.length - 1].classList.remove('not-visible');
+        if (carousel.current === carousel.slide.length - 1) {
+            carousel.slide[0].classList.add('not-visible');
+            carousel.slide[carousel.slide.length - 1].classList.remove('not-visible');
             if (!noArrows) {
                 // document.querySelector('.slider-right').classList.add('not-visible')
                 document.querySelector('.slider-left').classList.remove('not-visible')
             }
         }
-        else if (slideCurrent === 0) {
-            slide[slide.length - 1].classList.add('not-visible');
-            slide[0].classList.remove('not-visible');
+        else if (carousel.current === 0) {
+            carousel.slide[carousel.slide.length - 1].classList.add('not-visible');
+            carousel.slide[0].classList.remove('not-visible');
             if (!noArrows) {
                 // document.querySelector('.slider-left').classList.add('not-visible')
                 document.querySelector('.slider-right').classList.remove('not-visible')
             }
         } else {
-            slide[slide.length - 1].classList.remove('not-visible');
-            slide[0].classList.remove('not-visible');
+            carousel.slide[carousel.slide.length - 1].classList.remove('not-visible');
+            carousel.slide[0].classList.remove('not-visible');
             if (!noArrows) {
                 document.querySelector('.slider-left').classList.remove('not-visible')
                 document.querySelector('.slider-right').classList.remove('not-visible')
@@ -106,27 +116,27 @@ function checkRepeat() {
     }
 }
 
-function slideRight() {
-    if (slideCurrent < slideTotal) {
-        slideCurrent++;
+function slideRight(carousel) {
+    if (carousel.current < carousel.total) {
+        carousel.current++;
     } else {
-        slideCurrent = 0;
+        carousel.current = 0;
     }
 
-    if (slideCurrent > 0) {
-        var preactiveSlide = slide[slideCurrent - 1];
+    if (carousel.current > 0) {
+        var preactiveSlide = carousel.slide[carousel.current - 1];
     } else {
-        var preactiveSlide = slide[slideTotal];
+        var preactiveSlide = carousel.slide[carousel.total];
     }
-    var activeSlide = slide[slideCurrent];
-    if (slideCurrent < slideTotal) {
-        var proactiveSlide = slide[slideCurrent + 1];
+    var activeSlide = carousel.slide[carousel.current];
+    if (carousel.current < carousel.total) {
+        var proactiveSlide = carousel.slide[carousel.current + 1];
     } else {
-        var proactiveSlide = slide[0];
+        var proactiveSlide = carousel.slide[0];
 
     }
 
-    slide.forEach((elem) => {
+    carousel.slide.forEach((elem) => {
         var thisSlide = elem;
         if (thisSlide.classList.contains('preactivede')) {
             thisSlide.classList.remove('preactivede');
@@ -161,28 +171,28 @@ function slideRight() {
     proactiveSlide.classList.remove('proactivede');
     proactiveSlide.classList.add('proactive');
 
-    updateBullet();
+    updateBullet(carousel);
 }
 
-function slideLeft() {
-    if (slideCurrent > 0) {
-        slideCurrent--;
+function slideLeft(carousel) {
+    if (carousel.current > 0) {
+        carousel.current--;
     } else {
-        slideCurrent = slideTotal;
+        carousel.current = carousel.total;
     }
 
-    if (slideCurrent < slideTotal) {
-        var proactiveSlide = slide[slideCurrent + 1];
+    if (carousel.current < carousel.total) {
+        var proactiveSlide = carousel.slide[carousel.current + 1];
     } else {
-        var proactiveSlide = slide[0];
+        var proactiveSlide = carousel.slide[0];
     }
-    var activeSlide = slide[slideCurrent];
-    if (slideCurrent > 0) {
-        var preactiveSlide = slide[slideCurrent - 1];
+    var activeSlide = carousel.slide[carousel.current];
+    if (carousel.current > 0) {
+        var preactiveSlide = carousel.slide[carousel.current - 1];
     } else {
-        var preactiveSlide = slide[slideTotal];
+        var preactiveSlide = carousel.slide[carousel.total];
     }
-    slide.forEach((elem) => {
+    carousel.slide.forEach((elem) => {
         var thisSlide = elem;
         if (thisSlide.classList.contains('proactive')) {
             thisSlide.classList.remove('preactivede');
@@ -218,14 +228,18 @@ function slideLeft() {
     proactiveSlide.classList.remove('proactivede');
     proactiveSlide.classList.add('proactive');
 
-    updateBullet();
+    updateBullet(carousel);
 }
 
-function goToIndexSlide(index) {
-    const sliding = (slideCurrent > index) ? () => slideRight() : () => slideLeft();
-    while (slideCurrent !== index) {
-        sliding();
+function goToIndexSlide(index, carousel) {
+    const sliding = (carousel.current > index) ? () => slideRight(carousel) : () => slideLeft(carousel);
+    while (carousel.current != index) {
+        sliding(carousel);
     }
 }
 
-slideInitial();
+slideInitial(desktopPoligraph);
+slideInitial(desktopIllustrator);
+slideInitial(mobilePoligraph);
+slideInitial(mobileIllustrator);
+

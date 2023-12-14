@@ -26,7 +26,6 @@ function initBullets2() {
         elem.classList.add('proactivede');
     })
     container2.appendChild(bulletContainer2);
-    container2_mobile.appendChild(bulletContainer2);
 }
 
 function initArrows2() {
@@ -55,8 +54,7 @@ function initArrows2() {
     })
     container2.appendChild(leftArrow2);
     container2.appendChild(rightArrow2);
-    container2_mobile.appendChild(leftArrow2);
-    container2_mobile.appendChild(rightArrow2);
+
 }
 
 function slideInitial2() {
