@@ -10,10 +10,13 @@
   <!-- <link rel="stylesheet" href="styles/carousel-1.css"> похоже, это та не рабочая карусель-->
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/animation.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <!-- Ниже рабочая карусель -->
   <link rel="stylesheet" href="styles/sliders.css">
-  <link rel="stylesheet" href="styles/sliders__2.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/mobile/why-i_cards_carousel.css">
+  <link rel="stylesheet" href="styles/popup.css">
+
+  <!-- Ниже рабочая карусель -->
+  <!-- <link rel="stylesheet" href="styles/sliders__2.css"> -->
 </head>
 
 <body class="body-main">
@@ -55,7 +58,7 @@
             </div>
           </div>
           <div class="contact_button d-flex justify-content-start align-items-center">
-            <button class="main__button"> Связаться </button>
+            <a href="#contacts"> <button class="main__button"> Связаться </button></a>
           </div>
         </main>
         <aside class="col-7">
@@ -385,10 +388,10 @@
               <div class="social-icons">
                 <a href="https://t.me/alinaionku" target="telegram">
                   <img src="images/contact__icons/behance.svg" alt="1">
-                </a>
-                <a href="https://t.me/alinaionku" target="telegram">
+                </a>>
+                <a href="mailto:kalitka_designer@mail.ru" target="_blank" id="emailLink">
                   <img src="images/contact__icons/mail.svg" alt="2">
-                </a>
+              </a>
                 <a href="https://t.me/alinaionku" target="telegram">
                   <img src="images/contact__icons/phone.svg" alt="3">
                 </a>
@@ -400,6 +403,7 @@
                 </a>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -480,7 +484,7 @@
             <p>Соединяю фантазии с реальностью</p>
           </div>
         </footer>
-        <div class="main-button" id="main__button__mobile"><button class="main__button">Связаться</button></div>
+        <a href="#contacts-mobile"><div class="main-button" id="main__button__mobile"><button class="main__button">Связаться</button></div></a>
       </section>
       <section id="about_me-section">
         <div class="container">
@@ -596,85 +600,16 @@
         </section>
 
       </section>
-
-      <!-- <div id="portfolio" class="portfolio">
-        <div class="container">
-          <div class="portfolio__text__h1  text-center">
-            <h1>ПОРТФОЛИО</h1>
-          </div>
-          <div class="polygraphy__text__h2 text-center">
-            <h2>Полиграфия</h2>
-          </div>
-          <div class="slider-container" id="slider-container__poligraph">
-            <div class="slider-content">
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/ai.png" alt="1" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/vizitka_2.png" alt="8" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/edutech.png" alt="1" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/guap.png" alt="2" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/listovki.png" alt="3" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/menu.png" alt="4" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/menu_2.png" alt="5" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/pizza.png" alt="6" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/vizitka_1.png" alt="7" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image" src="images/carousel/vizitka_3.png" alt="9" />
-              </div>
-            </div>
-          </div>
-          <div class="illustration__text__h2 text-center">
-            <h2>Иллюстрация</h2>
-          </div>
-          <div class="slider-container__illustrator" id="slider-container__illustrator">
-            <div class="slider-content__2">
-              <div class="slider-single">
-                <img class="slider-single-image__2" src="images/carousel_2/bird.png" alt="1" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image__2" src="images/carousel_2/room_2.png" alt="2" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image__2" src="images/carousel_2/pz2.png" alt="3" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image__2" src="images/carousel_2/vaza_2.png" alt="4" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image__2" src="images/carousel_2/room.png" alt="5" />
-              </div>
-              <div class="slider-single">
-                <img class="slider-single-image__2" src="images/carousel_2/vaza.png" alt="6" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      
       
       <section id="portfolio">
         <div class="container">
-          <section class="title">
+          <section class="title text-center">
             <h2>ПОРТФОЛИО</h2>
           </section>
-          <section class="carousel title">
+          <section class="carousel title text-center">
             <h3>Полиграфия</h3>
-            <div class="slider-container" id="slider-container-mobile__poligraph">
+            <div class="slider-container slider-container-mobile" id="slider-container-mobile__poligraph">
               <div class="slider-content">
                 <div class="slider-single">
                   <img class="slider-single-image" src="images/carousel/ai.png" alt="ai" />
@@ -710,7 +645,7 @@
           </section>
           <section class="carousel title">
             <h3>Иллюстрация</h3>
-            <div class="slider-container" id="slider-container-mobile__illustrator">
+            <div class="slider-container slider-container-mobile" id="slider-container-mobile__illustrator">
               <div class="slider-content">
                 <div class="slider-single">
                   <img class="slider-single-image" src="images/carousel_2/room_2.png" alt="1" />
@@ -732,55 +667,52 @@
           </section>
         </div>
       </section>
-      <!-- <section id="why_me-section" class="container">
-        <section class="title">
-          <h2>ПОЧЕМУ Я?</h2>
-        </section>
-        <div class="card">
-          <div class="card__title">Соблюдение особых пожеланий</div>
+
+      <section class="title">
+        <h2>ПОЧЕМУ Я?</h2>
+      </section>
+
+      <div class="container">
+      <div class="cards">
+        <div class="card" id="card-1">
           <div class="card__container">
-            <div class="card__img">
-              <img src="images" alt="#">
+            <div class="card__title">Соблюдение особых пожеланий</div>
               <div class="card__text">
-                <p>Мы заранее обговорим дату, в которую вы получите готовый проект, независимо
-                  от сложности.</p>
-                <p>Если проект нужен «еще вчера» - на меня можно положиться</p>
+              <p>Понимаю, как добавить в работу
+                ”вкусный” красный, мягкий квадрат, как сделать
+                дизайн “живым” и наполнить его воздухом.</p>
+                <p>Со мной можно общаться любыми метафорами,
+                все самые различные пожелания будут учтены.</p>
               </div>
-            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card__title">Индивидуальный проект</div>
+
+        <div class="card" id="card-2">
           <div class="card__container">
-            <div class="card__img">
-              <img src="images/" alt="">
+            <div class="card__title">Индивидуальный проект</div>
               <div class="card__text">
                 <p>В своих работах я не повторяю шрифты, цвет, элементы и композиции. Не делаю
                   “как у них” и “подобно
                   этому”.</p>
                 <p>Каждый проект уникален и создан исключительно для одного заказчика</p>
               </div>
-            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card__title">Выполнение работы в срок</div>
+
+        <div class="card" id="card-3">
           <div class="card__container">
-            <div class="card__img">
-              <img src="images/" alt="#">
+            <div class="card__title">Выполнение работы в срок</div>
               <div class="card__text">
                 <p>Мы заранее обговорим дату, в которую вы получите готовый проект, независимо
                   от сложности.</p>
                 <p>Если проект нужен «еще вчера» - на меня можно положиться</p>
               </div>
             </div>
-          </div>
         </div>
-        <div class="card">
-          <div class="card__title">Охват множества сфер</div>
+
+        <div class="card" id="card-4">
           <div class="card__container">
-            <div class="card__img">
-              <img src="images/" alt="">
+            <div class="card__title">Охват множества сфер</div>
               <div class="card__text">
                 <p>Полиграфия, иллюстрация, брендбук, упаковка продукта, создание персонажей -
                   все это я уже умею и
@@ -788,10 +720,90 @@
                 <p>При необходимости способна изучить новое направление и приняться за работу.
                 </p>
               </div>
-            </div>
           </div>
         </div>
-      </section> -->
+      </div>
+    </div>
+
+    <div id="contacts-mobile" class="contacts">
+      <div class="container">
+ <div class="row">
+          <div class="offset-8 col-4 contacts__text">
+            <h1>КОНТАКТЫ</h1>
+          </div>
+        </div> 
+
+        <!-- <div class="row"> -->
+
+
+          <div class="contact-icon-mobile offset-1 col-6">
+            <div class="social-icons">
+              <a href="https://t.me/alinaionku" target="telegram">
+                <img src="images/contact__icons-mobile/behance.svg" alt="1">
+              </a>
+              <a href="https://t.me/alinaionku" target="telegram">
+                <img src="images/contact__icons-mobile/pinterest.svg" alt="2">
+              </a>
+              <a href="https://t.me/alinaionku" target="telegram">
+                <img src="images/contact__icons-mobile/pinterest.svg" alt="3">
+              </a>
+              <a href="https://t.me/alinaionku" target="telegram">
+                <img src="images/contact__icons-mobile/pinterest.svg" alt="4">
+              </a>
+              <a href="https://t.me/alinaionku" target="telegram">
+                <img src="images/contact__icons-mobile/pinterest.svg" alt="5">
+              </a>
+            </div>
+          </div> 
+
+          <div class="form col-5">
+            <form action="form" method="POST">
+              <div class="input-box">
+                <legend>Есть вопрос?</legend>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Имя">
+              </div>
+              <div class="input-box">
+                <input type="email" placeholder="Почта">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Номер телефона">
+              </div>
+              <div class="input-box message-box">
+                <textarea placeholder="Ваше сообщение" id="textArea"></textarea>
+              </div>
+
+              <div class="custom-select" onclick="toggleOptions()">
+                <div class="visible-text">Удобный способ связи</div>
+                <div class="underline"></div>
+                <div class="options-container">
+                  <div class="option" onclick="selectOption('Телефон')">
+                    <p>Телефон</p>
+                  </div>
+                  <div class="option" onclick="selectOption('Email')">
+                    <p>Email</p>
+                  </div>
+                  <div class="option" onclick="selectOption('Telegram')">
+                    <p>Telegram</p>
+                  </div>
+                  <div class="option" onclick="selectOption('WhatsApp')">
+                    <p>WhatsApp</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="button">
+                <button>отправить</button>
+              </div>
+            </form>
+          </div> 
+
+        </div>
+
+      </div>
+    </div>
+
     </main>
   </div>
 </body>

@@ -372,9 +372,9 @@ legend{
 }
 
 .contact-icon{
-	background: url('../images/contact__icons/main-icons.png') no-repeat center;
+	background: url('../images/contact__icons/main-icon.png') no-repeat center;
 	background-size: 80%;
-}  
+}
 
 .options-container {
 	/* position: absolute; */
@@ -410,4 +410,18 @@ legend{
 
 .aling-right{
 	text-align: right;
+}
+
+.title>h3{
+	font-size: 2.3rem;
+	color: white;
+	font-family: alethiapro-regular;
+
+}
+
+.title>h2{
+	font-size: 2.5rem;
+	color: white;
+	font-family: circe-extrabold;
+
 }
