@@ -15,6 +15,11 @@ main>section {
     font-size: 0.5rem;
     letter-spacing: 0.1rem;
 }
+.header__ul__vertical{
+    display: flex;
+    flex-direction:
+    column;
+}
 
 .main__text__h1>h1 {
     margin-top: 2rem;
