@@ -148,6 +148,13 @@ dl, ol, ul{
     margin-top: 20rem;
 }
 
+.contacts__text>h1 {
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 4rem;
+}
+
+
 
 .illustration__text__h2>h2{
     margin-top: 10rem;
@@ -296,4 +303,4 @@ margin-top: 1rem;
     margin-right: 1rem ;
 }
 
-
+/* дизайн формы */

@@ -224,6 +224,29 @@ main>section {
 margin-top: 5rem;
 }
 
-/* .title_why-i{
+/* дизайн карточек почему я */
 
-} */
+.why-i__text>h1{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: -2rem;
+}
+
+.carda__text p{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.carda {
+	margin-top: 4rem;
+}
+
+.carda__outer-mobile>h2 {
+    text-align: center;
+}
+
+.contacts__text>h1 {
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 1rem;
+}

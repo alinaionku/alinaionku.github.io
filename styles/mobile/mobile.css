@@ -13,3 +13,41 @@
 	font-family: alethiapro-regular;
 	color: white;
 }
+
+/* дизайн карточек почему я */
+
+.why-i__text>h1{
+	font-size: 2.5rem;
+	color: white;
+	font-family: circe-extrabold;
+}
+
+.carda__text p{
+	font-size: 1rem;
+	color: white;
+	font-family: alethiapro-regular;
+}
+
+.carda__inner {
+	background: rgba(0, 1, 60, 0.05);
+	box-shadow: 0 4px 30px rgb(4, 0, 19);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	border: 1px solid rgba(255, 255, 255, 0);
+}
+
+
+.carda__outer-mobile>h2 {
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+}
+
+.contacts__text>h1 {
+	font-family: circe-extrabold;
+	color: white;
+	font-size: 2.5rem;
+    text-align: center;
+    margin-top: 8rem;
+}
