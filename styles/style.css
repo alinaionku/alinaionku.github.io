@@ -234,137 +234,11 @@
 	letter-spacing: 0.1rem;
 }
 
-
-.form {
-	/* height: 18px; */
-	border-radius: 20px;
-	background-color: #ffffff3f;
-	/* width:40%; */
-	margin-top: 5rem;
-	padding: 15px;
-	line-height: 3rem;
-	box-shadow: 0 0 10px rgba(0, 0, 39, 0.631);
+.contact-icon {
+	background: url('../images/contact__icons/main-icon.png') no-repeat center;
+	background-size: 80%;
 }
 
-legend {
-	display: flex;
-	justify-content: center;
-	color: white;
-	background: none;
-	font-family: circe-extrabold;
-	font-size: 3rem;
-	width: 100%;
-
-}
-
-.input-box {
-	min-height: 2rem;
-	margin-top: 2rem;
-}
-
-.input-box:nth-child(1) {
-	margin-top: 1;
-}
-
-.input-box input,
-.input-box textarea,
-.input-box label,
-.input-box .selector {
-	font-size: 2rem;
-	font-family: alethiapro-regular;
-	color: #fff;
-
-	height: 50%;
-	width: 100%;
-	background: none;
-	border: none;
-	border-bottom: 3px solid #fff;
-	padding-bottom: 0.5rem;
-
-	/* resize:none; */
-	/* Запретить изменение размера */
-
-	overflow-y: auto;
-	/* Показывать полосы прокрутки только при необходимости */
-	scrollbar-width: thin;
-	/* Толщина полосы прокрутки (может не работать во всех браузерах) */
-	scrollbar-color: white;
-
-}
-
-.input-box textarea {
-	min-height: 4rem;
-	max-height: 15rem;
-}
-
-.input-box input::placeholder,
-.input-box textarea::placeholder {
-	color: #ffffff;
-	opacity: 0.5;
-}
-
-.input-box input:focus,
-.input-box textarea:focus {
-	outline: none;
-	/* Убрать контур фокуса */
-	border-color: #fff;
-	/* Цвет рамки при фокусе */
-	/* min-height: 1rem; */
-}
-
-/* input[type="button"] */
-.button button {
-	margin-top: 3rem;
-	border: 5px solid rgb(255, 255, 255);
-	;
-	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0);
-	font-family: circe-extrabold;
-	font-size: 2.5rem;
-	color: rgb(255, 255, 255);
-	width: 100%;
-	cursor: pointer;
-
-}
-
-/* input */
-.button button:hover {
-	background-color: rgba(255, 255, 255, 0.295);
-	/* border-color:  #ffffff7a;
-	background-color: #ffffff7a;
-	color: #03002B; */
-}
-
-.input-box>label {
-	border: none;
-}
-
-.custom-select {
-	position: relative;
-	width: 100%;
-
-}
-
-.custom-select::before {
-	content: "v";
-	position: absolute;
-	width: 100%;
-	color: white;
-	transform: translate(93%);
-	font-family: alethiapro-regular;
-	font-size: 2rem;
-	opacity: 0.5;
-}
-
-.visible-text {
-	font-family: alethiapro-regular;
-	font-size: 2rem;
-	color: white;
-	border: none;
-	cursor: pointer;
-	opacity: 0.5;
-	margin-top: 1.5rem;
-}
 
 .underline {
 	bottom: 0;
@@ -375,34 +249,6 @@ legend {
 	/* Ярко-белое подчеркивание */
 	margin-top: 0.9rem;
 	width: 100%;
-}
-
-.contact-icon {
-	background: url('../images/contact__icons/main-icon.png') no-repeat center;
-	background-size: 80%;
-}
-
-.options-container {
-	/* position: absolute; */
-	width: 100%;
-	font-family: alethiapro-regular;
-	color: rgb(255, 255, 255);
-	font-size: 2rem;
-	display: none;
-	border: none;
-	border-top: none;
-	background-color: rgba(255, 255, 255, 0.171);
-	/* Прозрачный белый цвет */
-}
-
-.option {
-	padding: 10px;
-	cursor: pointer;
-}
-
-.option:hover {
-	background-color: #e0e0e05b;
-	/* Цвет при наведении курсора */
 }
 
 .footer {
@@ -416,7 +262,7 @@ legend {
 	color: white;
 }
 
-.aling-right {
+.align-right {
 	text-align: right;
 }
 
@@ -424,4 +270,79 @@ legend {
 	font-size: 2.3rem;
 	color: white;
 	font-family: alethiapro-regular;
+}
+
+/* попап */
+
+.popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	z-index: 5;
+}
+.popup:target{
+	opacity: 1;
+	visibility: visible;
+}
+.popup__body{
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.popup__content{
+	max-width: 800px;
+	position: relative;
+	background-color: #fff;
+	color: #000;
+	padding: 30px 10px;
+	border-radius: 15px;
+	/*Часть анимации*/
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.popup__title{
+	font-size: 30px;
+}
+.popup__close{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000;
+}
+.popup__area{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;left: 0;
+}
+#invisibleObj{
+	position: fixed;
+	top: 0;left: 0;
+}
+
+/*анимация*/
+.popup{
+	transition: all 0.8s ease 0s;
+}
+.popup__content{
+	transform: translate(0px, -100%);
+}
+.popup:target .popup__content{
+	transition: all 0.8s ease 0s;
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
