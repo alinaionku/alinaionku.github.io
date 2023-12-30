@@ -441,25 +441,28 @@
   <!-- ----------------------------------------------------------------------------------------->
   <!--МОБИЛЬНАЯ ВЕРСИЯ  -->
   <div id="mobile">
-    <header>
-      <nav>
+    <header class="burger-menu">
+      <a href="" class="burger-menu_button">
+        <spun class="burger-menu_lines"></spun>
+      </a>
+      <nav class="burger-menu_nav">
         <ul class="header__ul">
-          <a href="#about-me">
+          <a href="#about-me" class="burger-menu_link">
             <li>обо мне</li>
           </a>
-          <a href="#portfolio">
+          <a href="#portfolio" class="burger-menu_link">
             <li>портфолио</li>
           </a>
-          <a href="#why-i">
+          <a href="#why-i" class="burger-menu_link">
             <li>почему я?</li>
           </a>
-          <a href="#contacts">
+          <a href="#contacts" class="burger-menu_link">
             <li>контакты</li>
           </a>
         </ul>
       </nav>
-  </div>
-  </header>
+      <div class="burger-menu_overlay"></div>
+    </header>
   <main>
     <section class="container">
       <div>
@@ -818,6 +821,7 @@
 </body>
 <script src="js/index.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/burger.js"></script>
 <!-- <script src="js/carousel__2.js"></script> -->
 
 </html>
