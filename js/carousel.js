@@ -25,8 +25,6 @@ function initBullets(carousel) {
     }
     const bulletContainer = document.createElement('div');
     bulletContainer.classList.add('bullet-container')
-    console.log(carousel.container)
-    console.log(carousel.slide)
     carousel.slide.forEach((elem, i) => {
         const bullet = document.createElement('div');
         bullet.classList.add('bullet')
