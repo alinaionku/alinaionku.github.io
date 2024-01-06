@@ -42,6 +42,7 @@
 	overflow: hidden;
 } */
 
+
 .body-main {
 	background-color: rgba(0, 5, 31, 0);
 	background-image: url(../images/background.jpg);
@@ -239,17 +240,6 @@
 	background-size: 80%;
 }
 
-
-.underline {
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 3px;
-	background-color: white;
-	/* Ярко-белое подчеркивание */
-	margin-top: 0.9rem;
-	width: 100%;
-}
 
 .footer {
 	background-color: #010940;

@@ -60,11 +60,12 @@ window.addEventListener("scroll", function(){
 ////////////////////////////////// Форма
 // Это отвечает за увеличение размера textarea (где написано "Ваше сообщение")
 document.getElementById('textArea').style.height = '2rem';
+document.getElementById('textAreaMobile').style.height = '1rem';
 document.addEventListener('DOMContentLoaded', function() {
     var textArea = document.getElementById('textArea');
+    var textAreaMobile = document.getElementById('textAreaMobile');
 
     textArea.addEventListener('input', function() {
-        console.log(this.scrollHeight)
         if(this.scrollHeight < 70){
             this.style.height = 'auto';
             this.style.height = (this.scrollHeight/1.9) + 'px';
@@ -80,12 +81,30 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.height = "2rem";
         }
     });
+
+    textAreaMobile.addEventListener('input', function() {
+        console.log(this.scrollHeight)
+        console.log(this.style.height)
+        if(this.scrollHeight < 70){
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight/1.9) + 'px';
+        } else if(this.scrollHeight < 120) {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight/1) + 'px';
+        }
+        else {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight - 50) + 'px';
+        }
+        if (this.value == ""){
+            this.style.height = "1rem";
+        }
+    });
 });
 
 //селектор выбора
 
 function toggleOptions() {
-    
     const optionsContainer = document.querySelector('.options-container');
     optionsContainer.style.display = optionsContainer.style.display === 'none' ? 'block' : 'none';
 }

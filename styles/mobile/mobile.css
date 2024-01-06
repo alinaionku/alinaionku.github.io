@@ -57,18 +57,22 @@
 
 .input-box {
 	min-height: 2rem;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 }
 
 .input-box:nth-child(1) {
-	margin-top: 1;
+	margin-top: 0.5rem;
+}
+
+#textAreaMobile{
+	margin-top: 20px;
 }
 
 .input-box input,
 .input-box textarea,
 .input-box label,
 .input-box .selector {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-family: alethiapro-regular;
 	color: #fff;
 
@@ -76,8 +80,8 @@
 	width: 100%;
 	background: none;
 	border: none;
-	border-bottom: 3px solid #fff;
-	padding-bottom: 0.5rem;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 0.2rem;
 
 	/* resize:none; */
 	/* Запретить изменение размера */
@@ -90,9 +94,12 @@
 
 }
 
+/* изменение размера блока ваше сообщение */
 .input-box textarea {
-	min-height: 4rem;
+	min-height: 2rem;
 	max-height: 15rem;
+
+	line-height: 1.5rem;
 }
 
 .input-box input::placeholder,
@@ -112,13 +119,16 @@
 
 .form {
 	/* height: 18px; */
+	width:95%;
+	margin: 0 auto;
+	margin-top: 2rem;
+	padding: 15px;
+
 	border-radius: 20px;
 	background-color: #ffffff3f;
-	/* width:40%; */
-	margin-top: 5rem;
-	padding: 15px;
-	line-height: 3rem;
 	box-shadow: 0 0 10px rgba(0, 0, 39, 0.631);
+	
+	line-height: 3rem;
 }
 
 legend {
@@ -127,7 +137,7 @@ legend {
 	color: white;
 	background: none;
 	font-family: circe-extrabold;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	width: 100%;
 
 }
@@ -135,15 +145,20 @@ legend {
 
 /* input[type="button"] */
 .button button {
-	margin-top: 3rem;
-	border: 5px solid rgb(255, 255, 255);
+	margin-top: 2rem;
+	border: 3px solid rgb(255, 255, 255);
 	border-radius: 10px;
+	height: 3rem;
 	background-color: rgba(255, 255, 255, 0);
 	font-family: circe-extrabold;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: rgb(255, 255, 255);
 	width: 100%;
 	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -157,12 +172,24 @@ legend {
 
 .visible-text {
 	font-family: alethiapro-regular;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: white;
 	border: none;
 	cursor: pointer;
 	opacity: 0.5;
-	margin-top: 1.5rem;
+	margin-top: 1rem;
+
+}
+
+.underline {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: white;
+	/* Ярко-белое подчеркивание */
+	margin-top: 0rem;
+	width: 100%;
 }
 
 .options-container {
@@ -198,13 +225,14 @@ legend {
 
 }
 
-.custom-select::before {
+.visible-text::before {
 	content: "v";
-	position: absolute;
-	width: 100%;
+	position: relative;
+	right: 10px;
+	/* width: 50%; */
 	color: white;
 	transform: translate(93%);
 	font-family: alethiapro-regular;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	opacity: 0.5;
 }
