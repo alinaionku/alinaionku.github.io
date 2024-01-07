@@ -247,7 +247,7 @@
 
 .footer {
 	background-color: #010940;
-	padding: 2rem 0;
+	padding: 1rem 0;
 }
 
 .footer-text {
@@ -296,10 +296,13 @@
 
 }
 .popup__content{
-	max-width: 800px;
+	max-width: 45rem;
 	position: relative;
-	background-color: #fff;
-	color: #000;
+	background: rgba(0, 1, 60, 0.05);
+	box-shadow: 0 4px 30px rgb(2, 0, 8);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	border: 1px solid rgba(255, 255, 255, 0);
 	padding: 30px 10px;
 	border-radius: 15px;
 	/*Часть анимации*/
@@ -307,7 +310,8 @@
 	transition: all 0.8s ease 0s;
 }
 .popup__title{
-	font-size: 30px;
+	font-size: 2rem;
+	font-family: alethiapro-regular;
 }
 .popup__close{
 	position: absolute;

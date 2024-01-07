@@ -236,3 +236,99 @@ legend {
 	font-size: 1.5rem;
 	opacity: 0.5;
 }
+
+.footer__mobile {
+	background-color: #010940;
+	padding: 0rem 0;
+}
+
+.footer-text__mobile {
+	font-family: alethiapro-regular;
+	font-size: 0.6rem;
+	color: white;
+}
+
+.align-right__mobile {
+	text-align: right;
+}
+
+/* попап */
+
+.popup-mobile{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	visibility: hidden;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	z-index: 5;
+}
+.popup-mobile:target{
+	opacity: 1;
+	visibility: visible;
+}
+.popup__body-mobile{
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.popup__content-mobile{
+	max-width: 17rem;
+	position: relative;
+	background: rgba(0, 3, 163, 0.05);
+	box-shadow: 0 4px 30px rgb(2, 0, 8);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	border: 1px solid rgba(255, 255, 255, 0);
+	padding: 1rem 1rem;
+	border-radius: 15px;
+	/*Часть анимации*/
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+.popup__title-mobile{
+	font-size: 1.2rem;
+	font-family: alethiapro-regular;
+	color: white;
+}
+.popup__close-mobile{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+.popup__area-mobile{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#invisibleObj-mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.popup-mobile{
+	transition: all 0.8s ease 0s;
+}
+.popup__content-mobile{
+	transform: translate(0px, -100%);
+}
+.popup-mobile:target .popup__content-mobile{
+	transition: all 0.8s ease 0s;
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
