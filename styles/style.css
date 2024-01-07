@@ -240,6 +240,10 @@
 	background-size: 80%;
 }
 
+.contact-icon__mobile {
+	background: url('../images/contact__icons/main-icon.png') no-repeat center;
+	background-size: 80%;
+}
 
 .footer {
 	background-color: #010940;
