@@ -97,7 +97,7 @@
 /* изменение размера блока ваше сообщение */
 .input-box textarea {
 	min-height: 2rem;
-	max-height: 15rem;
+	max-height: 8rem;
 
 	line-height: 1.5rem;
 }
@@ -170,7 +170,7 @@ legend {
 	color: #03002B; */
 }
 
-.visible-text {
+.visible-text-mobile {
 	font-family: alethiapro-regular;
 	font-size: 1.5rem;
 	color: white;
@@ -192,12 +192,12 @@ legend {
 	width: 100%;
 }
 
-.options-container {
+.options-container-mobile {
 	/* position: absolute; */
 	width: 100%;
 	font-family: alethiapro-regular;
 	color: rgb(255, 255, 255);
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: none;
 	border: none;
 	border-top: none;
@@ -225,13 +225,12 @@ legend {
 
 }
 
-.visible-text::before {
+.visible-text-mobile::before {
 	content: "v";
-	position: relative;
-	right: 10px;
-	/* width: 50%; */
+	position: absolute;
+	top: 0;
+	right: 0;
 	color: white;
-	transform: translate(93%);
 	font-family: alethiapro-regular;
 	font-size: 1.5rem;
 	opacity: 0.5;

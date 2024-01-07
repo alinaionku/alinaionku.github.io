@@ -85,16 +85,16 @@ document.addEventListener('DOMContentLoaded', function() {
     textAreaMobile.addEventListener('input', function() {
         console.log(this.scrollHeight)
         console.log(this.style.height)
-        if(this.scrollHeight < 70){
+        if(this.scrollHeight < 50){
             this.style.height = 'auto';
-            this.style.height = (this.scrollHeight/1.9) + 'px';
-        } else if(this.scrollHeight < 120) {
+            this.style.height = (this.scrollHeight/1.6) + 'px';
+        } else if(this.scrollHeight < 100) {
             this.style.height = 'auto';
-            this.style.height = (this.scrollHeight/1) + 'px';
+            this.style.height = (this.scrollHeight/0.8) + 'px';
         }
         else {
             this.style.height = 'auto';
-            this.style.height = (this.scrollHeight - 50) + 'px';
+            this.style.height = (this.scrollHeight) + 'px';
         }
         if (this.value == ""){
             this.style.height = "1rem";
@@ -115,5 +115,15 @@ function selectOption(value) {
     visibleText.style.opacity = 1;
 }
 
+function toggleOptionsMobile() {
+    const optionsContainerMobile = document.querySelector('.options-container-mobile');
+    optionsContainerMobile.style.display = optionsContainerMobile.style.display === 'none' ? 'block' : 'none';
+}
+
+function selectOptionMobile(value) {
+    const visibleTextMobile = document.querySelector('.visible-text-mobile');
+    visibleTextMobile.textContent = ` ${value}`;
+    visibleTextMobile.style.opacity = 1;
+}
 ////////////////////////////////// Форма
 

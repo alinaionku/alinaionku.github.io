@@ -153,3 +153,14 @@ legend {
 	font-size: 2rem;
 	opacity: 0.5;
 }
+
+.underline {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background-color: white;
+	/* Ярко-белое подчеркивание */
+	margin-top: 0rem;
+	width: 100%;
+}
