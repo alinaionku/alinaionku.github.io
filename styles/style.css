@@ -44,7 +44,7 @@
 
 
 .body-main {
-	height: 110vh;
+	height: 110dvh;
 	width: 110vw;
 
 	background-color: rgba(0, 5, 31, 0);
@@ -351,4 +351,8 @@
 	transition: all 0.8s ease 0s;
 	transform: translate(0px, 0px);
 	opacity: 1;
+}
+
+.invisible{
+	display: none;
 }

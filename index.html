@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/animation.css">
   <link rel="stylesheet" href="styles/sliders.css">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/mobile/why-i_cards_carousel.css">
+  <!-- <link rel="stylesheet" href="styles/mobile/why-i_cards_carousel.css"> -->
   <!-- <link rel="stylesheet" href="styles/popup.css"> -->
 
   <!-- Ниже рабочая карусель -->
@@ -784,26 +784,29 @@
           </div>
 
           <div class="form">
-            <form action="form" method="POST">
+            <form action="form" method="post" name="communication">
               <div class="input-box">
                 <legend>Есть вопрос?</legend>
               </div>
               <div class="input-box">
-                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Имя" name="name">
               </div>
               <div class="input-box">
-                <input type="email" placeholder="Почта">
+                <input type="email" placeholder="Почта" name="email">
               </div>
               <div class="input-box">
-                <input type="text" placeholder="Номер телефона">
+                <input type="text" placeholder="Номер телефона" name="phone">
               </div>
               <div class="input-box message-box">
-                <textarea placeholder="Ваше сообщение" id="textAreaMobile"></textarea>
+                <textarea placeholder="Ваше сообщение" id="textAreaMobile" name="message"></textarea>
               </div>
 
               <div class="custom-select" onclick="toggleOptionsMobile()">
                 <div class="visible-text-mobile">Удобный способ связи</div>
                 <div class="underline"></div>
+                <div class="input-box invisible">
+                  <input type="text" id="preferredCommunicationMethodMobile" placeholder="невидимое поле" name="preferredCommunicationMethod">
+                </div>
                 <div class="options-container-mobile">
                   <div class="option" onclick="selectOptionMobile('Телефон')">
                     <p>Телефон</p>
@@ -819,11 +822,13 @@
                   </div>
                 </div>
               </div>
-
-              <div class="button">
-                <button>отправить</button>
-              </div>
+              <!-- <div class="input-box">
+                <input type="">
+              </div> -->
             </form>
+            <div class="button">
+              <button type="submit" value="отправить" onclick="communicationForm()">отправить</button>
+            </div>
           </div>
 
           <div class="contact-icon__mobile">
