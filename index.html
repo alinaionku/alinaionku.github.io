@@ -12,14 +12,15 @@
   <link rel="stylesheet" href="styles/animation.css">
   <link rel="stylesheet" href="styles/sliders.css">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/mobile/why-i_cards_carousel.css">
+  <!-- <link rel="stylesheet" href="styles/mobile/why-i_cards_carousel.css"> -->
   <!-- <link rel="stylesheet" href="styles/popup.css"> -->
 
   <!-- Ниже рабочая карусель -->
   <!-- <link rel="stylesheet" href="styles/sliders__2.css"> -->
 </head>
 
-<body class="body-main">
+<body>
+  <div class="body-main"></div>
   <div id="desktop">
     <header>
       <div class="container">
@@ -195,6 +196,9 @@
           <div class="slider-content">
             <div class="slider-single">
               <img class="slider-single-image" src="images/carousel/ai.png" alt="1" />
+            </div>
+            <div class="slider-single">
+              <img class="slider-single-image" src="images/carousel/liflet.png" alt="12" />
             </div>
             <div class="slider-single">
               <img class="slider-single-image" src="images/carousel/vizitka_2.png" alt="8" />
@@ -441,9 +445,15 @@
             <p>© Калитка 2023г.</p>
           </div>
           <div class="footer-icons col-3">
-            <img src="images/footer-icons/mail.svg" alt="">
-            <img src="images/footer-icons/telegram.svg" alt="">
-            <img src="images/footer-icons/phone.svg" alt="">
+              <a href="mailto:kalitka_designer@mail.ru">
+                <img src="images/footer-icons/mail.svg" alt="">
+              </a>
+              <a href="https://t.me/alinaionku">
+                <img src="images/footer-icons/telegram.svg" alt="">
+              </a>
+              <a href="tel:+79819557847">
+                <img src="images/footer-icons/phone.svg" alt="">
+              </a>
           </div>
           <div class="footer-text col-3 text-right">
             <p class="align-right">Пользовательское<br>соглашение</p>
@@ -636,6 +646,9 @@
                   <img class="slider-single-image" src="images/carousel/ai.png" alt="1" />
                 </div>
                 <div class="slider-single">
+                  <img class="slider-single-image" src="images/carousel/liflet.png" alt="12" />
+                </div>
+                <div class="slider-single">
                   <img class="slider-single-image" src="images/carousel/vizitka_2.png" alt="8" />
                 </div>
                 <div class="slider-single">
@@ -699,7 +712,7 @@
           </section>
         </div>
       </section>
-      <section id="why-i" class="why-i">
+      <section id="why-i-mobile" class="why-i">
         <div class="container">
           <div class="why-i__text">
             <h1>ПОЧЕМУ Я?</h1>
@@ -783,46 +796,51 @@
           </div>
 
           <div class="form">
-            <form action="form" method="POST">
+            <form action="form" method="post" name="communicationMobile">
               <div class="input-box">
                 <legend>Есть вопрос?</legend>
               </div>
               <div class="input-box">
-                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Имя" name="name">
               </div>
               <div class="input-box">
-                <input type="email" placeholder="Почта">
+                <input type="email" placeholder="Почта" name="email">
               </div>
               <div class="input-box">
-                <input type="text" placeholder="Номер телефона">
+                <input type="text" placeholder="Номер телефона" name="phone">
               </div>
               <div class="input-box message-box">
-                <textarea placeholder="Ваше сообщение" id="textAreaMobile"></textarea>
+                <textarea placeholder="Ваше сообщение" id="textAreaMobile" name="message"></textarea>
               </div>
 
-              <div class="custom-select" onclick="toggleOptions(this)">
-                <div class="visible-text">Удобный способ связи</div>
+              <div class="custom-select" onclick="toggleOptionsMobile()">
+                <div class="visible-text-mobile">Удобный способ связи</div>
                 <div class="underline"></div>
-                <div class="options-container">
-                  <div class="option" onclick="selectOption('Телефон')">
+                <div class="input-box invisible">
+                  <input type="text" id="preferredCommunicationMethodMobile" placeholder="невидимое поле" name="preferredCommunicationMethod">
+                </div>
+                <div class="options-container-mobile">
+                  <div class="option" onclick="selectOptionMobile('Телефон')">
                     <p>Телефон</p>
                   </div>
-                  <div class="option" onclick="selectOption('Email')">
+                  <div class="option" onclick="selectOptionMobile('Email')">
                     <p>Email</p>
                   </div>
-                  <div class="option" onclick="selectOption('Telegram')">
+                  <div class="option" onclick="selectOptionMobile('Telegram')">
                     <p>Telegram</p>
                   </div>
-                  <div class="option" onclick="selectOption('WhatsApp')">
+                  <div class="option" onclick="selectOptionMobile('WhatsApp')">
                     <p>WhatsApp</p>
                   </div>
                 </div>
               </div>
-
-              <div class="button">
-                <button>отправить</button>
-              </div>
+              <!-- <div class="input-box">
+                <input type="">
+              </div> -->
             </form>
+            <div class="button">
+              <button type="submit" value="отправить" onclick="communicationFormMobile()">отправить</button>
+            </div>
           </div>
 
           <div class="contact-icon__mobile">
@@ -857,37 +875,6 @@
               </div>
             </div>
           </div>
-
-
-          <!-- <div class="social-icons">
-            <a href="#popup">
-              <img src="images/contact__icons/behance.svg" alt="1">
-            </a>
-            <a href="mailto:kalitka_designer@mail.ru" target="_blank" id="emailLink">
-              <img src="images/contact__icons/mail.svg" alt="2">
-            </a>
-            <a href="tel:+79819557847">
-              <img src="images/contact__icons/phone.svg" alt="3">
-            </a>
-            <a href="#popup">
-              <img src="images/contact__icons/pinterest.svg" alt="4">
-            </a>
-            <a href="https://t.me/alinaionku">
-              <img src="images/contact__icons/telegram.svg" alt="5">
-            </a>
-          </div>
-          <div id="popup" class="popup">
-            <a href="#invisibleObj" class="popup__area"></a>
-            <div class="popup__body">
-              <div class="popup__content">
-                <a href="#invisibleObj" class="popup__close">x</a>
-                <div class="popup__title">
-                  <p>Данная страница находится в разработке. Совсем скоро она будет доступна.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
         </div>
       </section>
 
@@ -904,9 +891,15 @@
               <p>© Калитка 2023г.</p>
             </div>
             <div class="footer-icons__mobile col-4">
-              <img src="images/footer-icons/mail.svg" alt="">
-              <img src="images/footer-icons/telegram.svg" alt="">
-              <img src="images/footer-icons/phone.svg" alt="">
+               <a href="mailto:kalitka_designer@mail.ru">
+                <img src="images/footer-icons/mail.svg" alt="">
+              </a>
+              <a href="https://t.me/alinaionku">
+                <img src="images/footer-icons/telegram.svg" alt="">
+              </a>
+              <a href="tel:+79819557847">
+                <img src="images/footer-icons/phone.svg" alt="">
+              </a>
             </div>
             <div class="footer-text__mobile col-4 text-right">
               <p class="align-right__mobile">Пользовательское<br>соглашение</p>

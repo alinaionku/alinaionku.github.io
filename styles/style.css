@@ -44,18 +44,26 @@
 
 
 .body-main {
+	height: 110vh;
+	width: 110vw;
+
 	background-color: rgba(0, 5, 31, 0);
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-
+	
 	background-size: cover;
 	background-blend-mode: darken;
 	transition: all 0.3s ease;
+	
+	position: fixed;
+	top: 0;
+
+	z-index: -5;
 }
 
 .body-dark {
@@ -343,4 +351,8 @@
 	transition: all 0.8s ease 0s;
 	transform: translate(0px, 0px);
 	opacity: 1;
+}
+
+.invisible{
+	display: none;
 }

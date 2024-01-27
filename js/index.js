@@ -83,18 +83,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     textAreaMobile.addEventListener('input', function() {
-        console.log(this.scrollHeight)
-        console.log(this.style.height)
-        if(this.scrollHeight < 70){
+        if(this.scrollHeight < 50){
             this.style.height = 'auto';
-            this.style.height = (this.scrollHeight/1.9) + 'px';
-        } else if(this.scrollHeight < 120) {
+            this.style.height = (this.scrollHeight/1.6) + 'px';
+        } else if(this.scrollHeight < 100) {
             this.style.height = 'auto';
-            this.style.height = (this.scrollHeight/1) + 'px';
+            this.style.height = (this.scrollHeight/0.8) + 'px';
         }
         else {
             this.style.height = 'auto';
-            this.style.height = (this.scrollHeight - 50) + 'px';
+            this.style.height = (this.scrollHeight) + 'px';
         }
         if (this.value == ""){
             this.style.height = "1rem";
@@ -113,7 +111,102 @@ function selectOption(value) {
     const visibleText = document.querySelector('.visible-text');
     visibleText.textContent = ` ${value}`;
     visibleText.style.opacity = 1;
+    
+    const preferredCommunicationMethod = document.querySelector('#preferredCommunicationMethod');
+    preferredCommunicationMethod.value = `${value}`;
 }
 
+function toggleOptionsMobile() {
+    const optionsContainerMobile = document.querySelector('.options-container-mobile');
+    optionsContainerMobile.style.display = optionsContainerMobile.style.display === 'none' ? 'block' : 'none';
+}
+
+function selectOptionMobile(value) {
+    const visibleTextMobile = document.querySelector('.visible-text-mobile');
+    visibleTextMobile.textContent = ` ${value}`;
+    visibleTextMobile.style.opacity = 1;
+
+    const preferredCommunicationMethodMobile = document.querySelector('#preferredCommunicationMethodMobile');
+    preferredCommunicationMethodMobile.value = `${value}`;
+}
 ////////////////////////////////// Форма
 
+async function communicationForm() {
+    let name = document.forms['communication']['name'].value;
+    let email = document.forms['communication']['email'].value;
+    let phone = document.forms['communication']['phone'].value;
+    let message = document.forms['communication']['message'].value;
+    let preferredCommunicationMethod = document.forms['communication']['preferredCommunicationMethod'].value;
+
+    const url = 'https://kalitka-designer.ru/telegram.php';
+    const params = {
+        name:       `${name}`,
+        email:      `${email}`,
+        phone:      `${phone}`,
+        message:    `${message}`,
+        preference: `${preferredCommunicationMethod}`,
+    };
+    
+    const queryParams = new URLSearchParams(params).toString();
+    const fullUrl = `${url}?${queryParams}`;
+    let response = await fetch(fullUrl);
+    // .then
+    if (response.ok){
+        alert ("Сообщение отправлено!")
+    } else{
+        alert ("Произошла ошибка")
+    }
+};
+
+async function communicationFormMobile() {
+    let name = document.forms['communicationMobile']['name'].value;
+    let email = document.forms['communicationMobile']['email'].value;
+    let phone = document.forms['communicationMobile']['phone'].value;
+    let message = document.forms['communicationMobile']['message'].value;
+    let preferredCommunicationMethod = document.forms['communicationMobile']['preferredCommunicationMethod'].value;
+
+    // const url = 'https://alinaionku.github.io/telegram.php';
+    const url = 'https://kalitka-designer.ru/telegram.php';
+    const params = {
+        name:       `${name}`,
+        email:      `${email}`,
+        phone:      `${phone}`,
+        message:    `${message}`,
+        preference: `${preferredCommunicationMethod}`,
+    };
+    // let text = `<b>Имя: ${params.name}</b>
+    // <s>Почта: ${params.email}</s>
+    // <u>Телефон: ${params.phone}</u>
+    // <i>Сообщение: ${params.message}</i>
+    // <b>Способ связи: ${params.preference}</b>`
+    
+    // const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${text}`;
+    const queryParams = new URLSearchParams(params).toString();
+    const fullUrl = `${url}?${queryParams}`;
+    let response = await fetch(fullUrl);
+    // .then
+    if (response.ok){
+        alert ("Сообщение отправлено!")
+    } else{
+        alert ("Произошла ошибка")
+    }
+    // console.log(url)
+    // console.log(phone);
+    // console.log(response);
+    console.log(fullUrl);
+
+    // console.log(text)
+    // console.log("ok")
+
+
+    // let response = fetch('https://alinaionku.github.io/telegram.php', {method: 'POST', headers: {'Content-Type': 'application/json;charset=utf-8'},
+    //     body: JSON.stringify(name, email, phone, message, preferredCommunicationMethod)});
+    // if (response.ok) { // если HTTP-статус в диапазоне 200-299
+    // // получаем тело ответа (см. про этот метод ниже)
+    // let json = response.json();
+    // } else {
+    // alert("Ошибка HTTP: " + response.status);
+    // }
+
+    // console.log(JSON.stringify(name, email, phone, message, preferredCommunicationMethod))
+};
